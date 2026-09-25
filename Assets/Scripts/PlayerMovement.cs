@@ -193,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Sets Crouch State
-        else if(Input.GetKey(crouchKey))
+        else if(Input.GetKey(crouchKey) && grounded)
         {
             state = MovementState.crouching;
             disiredMoveSpeed = crouchSpeed;
