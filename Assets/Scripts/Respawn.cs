@@ -23,7 +23,7 @@ public class Respawn : MonoBehaviour
         currentPosition = new Vector3 (rb.position.x, rb.position.y, rb.position.z);
         if (currentPosition.y < -5)
         {
-            currentPosition = startPostion;
+            rb.transform.position = startPostion;
         }
     }
 
